@@ -1,0 +1,449 @@
+{% extends 'base.html' %}
+
+{% block title %}Home | DjangoApp{% endblock %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="home-hero">
+    <div class="hero-glow hero-glow-one"></div>
+    <div class="hero-glow hero-glow-two"></div>
+
+    <div class="container">
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+                
+                <h1 class="hero-title">
+                    We Build Ideas Into
+                    <span>Powerful Solutions.</span>
+                </h1>
+
+                <p class="hero-description">
+                    We create modern, responsive, and high-performance websites that help businesses establish a strong online presence, engage customers, and grow their brand.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="{% url 'services' %}" class="btn-primary-custom">
+                        Explore Services
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <a href="{% url 'contact' %}" class="btn-outline-custom">
+                        Let's Talk
+                        <i class="bi bi-chat-dots"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+                <div class="hero-visual">
+
+                    <div class="hero-image-wrapper">
+                        <img
+                            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1100&q=85"
+                            alt="Modern business workspace"
+                            class="hero-image">
+                    </div>
+
+                    <div class="floating-card floating-card-top">
+                        <div class="floating-icon">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <div>
+                            <h6>Growth Focused</h6>
+                            <p>Built for your business</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-bottom">
+                        <div class="floating-icon purple-icon">
+                            <i class="bi bi-lightbulb"></i>
+                        </div>
+                        <div>
+                            <h6>Creative Ideas</h6>
+                            <p>Turning vision into reality</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-circle"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- FEATURES STRIP -->
+<section class="features-strip">
+    <div class="container">
+        <div class="row g-3">
+
+            <div class="col-6 col-lg-3 con-item">
+                <div class="feature-item">
+                    <i class="bi bi-shield-check"></i>
+                    <span>Trusted Service</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 con-item">
+                <div class="feature-item">
+                    <i class="bi bi-award"></i>
+                    <span>Quality Work</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 con-item">
+                <div class="feature-item">
+                    <i class="bi bi-people"></i>
+                    <span>Customer Focus</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 con-item">
+                <div class="feature-item">
+                    <i class="bi bi-headset"></i>
+                    <span>Dedicated Support</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section class="home-about section-padding">
+    <div class="container">
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+                <div class="about-image-wrapper">
+                    <img
+                        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85"
+                        alt="Business team working together"
+                        class="about-image">
+
+                    <div class="about-image-label">
+                        <i class="bi bi-rocket-takeoff"></i>
+                        <span>Ideas. Innovation. Growth.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <span class="section-tag">ABOUT OUR BUSINESS</span>
+
+                <h2 class="section-title">
+                    Your Success Is
+                    <span>Our Priority.</span>
+                </h2>
+
+                <p class="section-description">
+                    We believe every business has the potential to achieve
+                    something extraordinary. Our goal is to provide
+                    reliable services and practical solutions that help
+                    you move forward with confidence.
+                </p>
+
+                <div class="about-points">
+                    <div class="about-point">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Solutions designed around your needs</span>
+                    </div>
+
+                    <div class="about-point">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Focus on quality and customer satisfaction</span>
+                    </div>
+
+                    <div class="about-point">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Modern ideas with a practical approach</span>
+                    </div>
+                </div>
+
+                <a href="{% url 'about' %}" class="section-link">
+                    Learn More About Us
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- SERVICES SECTION -->
+<section class="home-services section-padding">
+    <div class="container">
+
+        <div class="section-header text-center">
+            <span class="section-tag">WHAT WE DO</span>
+
+            <h2 class="section-title">
+                Our Professional
+                <span>Services</span>
+            </h2>
+
+            <p class="section-description mx-auto">
+                Explore our services and discover how we can help
+                your business reach its next level.
+            </p>
+        </div>
+
+        <div class="row g-4 mt-3">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-laptop"></i>
+                    </div>
+
+                    <h4>Web Development</h4>
+
+                    <p>
+                        Modern, responsive and user-friendly websites
+                        designed to give your business a strong online presence.
+                    </p>
+
+                    <a href="{% url 'services' %}" class="service-link">
+                        Explore Service
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon purple-service-icon">
+                        <i class="bi bi-palette"></i>
+                    </div>
+
+                    <h4>Creative Design</h4>
+
+                    <p>
+                        Eye-catching designs and creative visuals
+                        that help your brand stand out from the competition.
+                    </p>
+
+                    <a href="{% url 'services' %}" class="service-link">
+                        Explore Service
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon green-service-icon">
+                        <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+
+                    <h4>Digital Solutions</h4>
+
+                    <p>
+                        Smart digital strategies and business solutions
+                        to improve your reach, efficiency and growth.
+                    </p>
+
+                    <a href="{% url 'services' %}" class="service-link">
+                        Explore Service
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="{% url 'services' %}" class="btn-primary-custom">
+                View All Services
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- WHY CHOOSE US -->
+<section class="why-us section-padding">
+    <div class="container">
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+                <span class="section-tag">WHY CHOOSE US</span>
+
+                <h2 class="section-title">
+                    The Right Partner
+                    For Your <span>Growth.</span>
+                </h2>
+
+                <p class="section-description">
+                    We combine creativity, commitment and a customer-first
+                    mindset to deliver solutions that support your goals.
+                </p>
+
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="bi bi-gem"></i>
+                    </div>
+                    <div>
+                        <h5>Quality First</h5>
+                        <p>We focus on delivering thoughtful, reliable work.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="bi bi-clock-history"></i>
+                    </div>
+                    <div>
+                        <h5>Efficient Process</h5>
+                        <p>We value your time and keep communication clear.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="bi bi-heart"></i>
+                    </div>
+                    <div>
+                        <h5>Customer First</h5>
+                        <p>Your needs and satisfaction guide our approach.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="why-visual">
+                    <img
+                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=85"
+                        alt="Business professionals collaborating">
+
+                    <div class="why-overlay">
+                        <i class="bi bi-quote"></i>
+                        <h4>Great partnerships create great possibilities.</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- PROJECTS SECTION -->
+<section class="home-projects section-padding">
+    <div class="container">
+
+        <div class="section-header text-center">
+            <span class="section-tag">OUR WORK</span>
+
+            <h2 class="section-title">
+                Ideas Brought
+                <span>To Life.</span>
+            </h2>
+
+            <p class="section-description mx-auto">
+                Take a look at our work and explore the possibilities
+                we can create together.
+            </p>
+        </div>
+
+        <div class="row g-4 mt-3">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDpo75eVNlXnSgYAyOBfqtx5kYPgngxD3ytKhDjdcFztRlnruvNU-DWME&s=10"
+                        alt="Business analytics dashboard">
+
+                    <div class="project-content">
+                        <span>Web Design</span>
+                        <h4>My Portfolio</h4>
+                        <a href="{% url 'projects' %}" aria-label="View projects">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img
+                        src="https://thumbs.dreamstime.com/b/young-woman-completes-online-work-permit-application-form-using-laptop-456108709.jpg"
+                        alt="Website design displayed on a screen">
+
+                    <div class="project-content">
+                        <span>Digital Solutions</span>
+                        <h4>Marksheet App</h4>
+                        <a href="{% url 'projects' %}" aria-label="View projects">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <img
+                        src="https://www.shutterstock.com/image-photo/hands-computer-typing-desk-remote-260nw-2499290475.jpg"
+                        alt="Creative branding and graphic design">
+
+                    <div class="project-content">
+                        <span>Creative Design</span>
+                        <h4>Calculator App</h4>
+                        <a href="{% url 'projects' %}" aria-label="View projects">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="{% url 'projects' %}" class="btn-outline-dark-custom">
+                Explore Our Projects
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CALL TO ACTION -->
+<section class="home-cta">
+    <div class="container">
+        <div class="cta-box">
+            <div class="cta-content">
+                <span class="cta-tag">LET'S WORK TOGETHER</span>
+
+                <h2>
+                    Have an Idea?
+                    <span>Let's Make It Happen.</span>
+                </h2>
+
+                <p>
+                    Tell us about your goals. Let's discuss how
+                    we can help your business move forward.
+                </p>
+
+                <a href="{% url 'contact' %}" class="cta-button">
+                    Get In Touch
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+            </div>
+
+            <div class="cta-decoration">
+                <i class="bi bi-rocket-takeoff"></i>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

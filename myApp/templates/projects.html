@@ -1,0 +1,335 @@
+{% extends 'base.html' %}
+
+{% block title %}Projects | DjangoApp{% endblock %}
+
+{% block content %}
+
+<!-- PROJECTS HERO -->
+<section class="projects-hero">
+    <div class="projects-hero-glow"></div>
+
+    <div class="container">
+        <div class="projects-hero-content">
+
+            <span class="projects-badge">
+                <i class="bi bi-stars"></i>
+                OUR WORK & ACHIEVEMENTS
+            </span>
+
+            <h1>
+                Ideas Into Action.
+                <span>Projects That Inspire.</span>
+            </h1>
+
+            <p>
+                Explore our work, creative solutions and digital
+                experiences designed to turn business ideas into reality.
+            </p>
+
+            <div class="projects-hero-buttons">
+                <a href="#project-gallery" class="projects-btn-primary">
+                    Explore Projects
+                    <i class="bi bi-arrow-down"></i>
+                </a>
+
+                <a href="{% url 'contact' %}" class="projects-btn-outline">
+                    Start a Project
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+            </div>
+
+            <nav class="projects-breadcrumb" aria-label="Breadcrumb">
+                <a href="{% url 'home' %}">Home</a>
+                <i class="bi bi-chevron-right"></i>
+                <span>Projects</span>
+            </nav>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- INTRODUCTION -->
+<section class="projects-intro">
+    <div class="container">
+        <div class="projects-intro-inner">
+
+            <div class="projects-intro-icon">
+                <i class="bi bi-grid-1x2"></i>
+            </div>
+
+            <div>
+                <span class="projects-section-tag">OUR PORTFOLIO</span>
+
+                <h2>
+                    Every Project Tells
+                    <span>A Story.</span>
+                </h2>
+
+                <p>
+                    Our portfolio showcases different ideas, design
+                    approaches and digital solutions. Each project
+                    represents a commitment to thoughtful work and
+                    meaningful results.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- PROJECT GALLERY -->
+<section class="projects-gallery" id="project-gallery">
+    <div class="container">
+
+        <div class="projects-section-heading text-center">
+            <span class="projects-section-tag">FEATURED WORK</span>
+
+            <h2>
+                Explore Our
+                <span>Latest Projects.</span>
+            </h2>
+
+            <p>
+                Take a closer look at our sample work across web
+                development, creative design and digital solutions.
+            </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+
+            <!-- PROJECT 1 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="project-showcase-card">
+
+                    <div class="project-showcase-image">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDpo75eVNlXnSgYAyOBfqtx5kYPgngxD3ytKhDjdcFztRlnruvNU-DWME&s=10"
+                            alt="Business analytics dashboard project"
+                            loading="lazy">
+
+                        <span class="project-category">Web Development</span>
+
+                        <a href="{% url 'contact' %}"
+                           class="project-image-action"
+                           aria-label="Enquire about a dashboard project">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="project-showcase-content">
+                        <div class="project-meta">
+                            <span>01 / DIGITAL SOLUTIONS</span>
+                            <i class="bi bi-window"></i>
+                        </div>
+
+                        <h3>My Portfolio</h3>
+
+                        <p>
+                            Developed a modern, responsive website with a clean user interface, smooth navigation, and an engaging user experience across all devices.
+                        </p>
+
+                        <div class="project-tech-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+
+            <!-- PROJECT 2 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="project-showcase-card">
+
+                    <div class="project-showcase-image">
+                        <img
+                            src="https://thumbs.dreamstime.com/b/young-woman-completes-online-work-permit-application-form-using-laptop-456108709.jpg"
+                            alt="Modern website design concept"
+                            loading="lazy">
+
+                        <span class="project-category category-purple">
+                            Website Design
+                        </span>
+
+                        <a href="{% url 'contact' %}"
+                           class="project-image-action"
+                           aria-label="Enquire about a website design">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="project-showcase-content">
+                        <div class="project-meta">
+                            <span>02 / WEB DESIGN</span>
+                            <i class="bi bi-laptop"></i>
+                        </div>
+
+                        <h3>Marksheet App</h3>
+
+                        <p>
+                            Developed a user-friendly Student Marksheet App that calculates total marks, percentage, and grades based on student's subject-wise scores.
+                        </p>
+
+                        <div class="project-tech-list">
+                            <span>HTML</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+
+            <!-- PROJECT 3 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="project-showcase-card">
+
+                    <div class="project-showcase-image">
+                        <img
+                            src="https://www.shutterstock.com/image-photo/hands-computer-typing-desk-remote-260nw-2499290475.jpg"
+                            alt="Creative branding and graphic design concept"
+                            loading="lazy">
+
+                        <span class="project-category category-orange">
+                            Web Design
+                        </span>
+
+                        <a href="{% url 'contact' %}"
+                           class="project-image-action"
+                           aria-label="Enquire about graphic design">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="project-showcase-content">
+                        <div class="project-meta">
+                            <span>03 / Calculating</span>
+                            <i class="bi bi-palette"></i>
+                        </div>
+
+                        <h3>Calculator App</h3>
+
+                        <p>
+                            Built an interactive calculator using HTML, CSS, and JavaScript to perform basic mathematical operations with a simple and user-friendly interface.
+                        </p>
+
+                        <div class="project-tech-list">
+                            <span>Branding</span>
+                            <span>Graphics</span>
+                            <span>Visual Design</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- PROJECT WORKFLOW -->
+<section class="projects-workflow">
+    <div class="container">
+
+        <div class="projects-section-heading text-center">
+            <span class="projects-section-tag">OUR APPROACH</span>
+
+            <h2>
+                How We Bring Ideas
+                <span>To Life.</span>
+            </h2>
+
+            <p>
+                A clear process helps turn project requirements
+                into organized, purposeful work.
+            </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="workflow-card">
+                    <span class="workflow-number">01</span>
+                    <div class="workflow-icon">
+                        <i class="bi bi-chat-square-text"></i>
+                    </div>
+                    <h4>Understand</h4>
+                    <p>We learn about the goals and project requirements.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="workflow-card">
+                    <span class="workflow-number">02</span>
+                    <div class="workflow-icon">
+                        <i class="bi bi-pencil-square"></i>
+                    </div>
+                    <h4>Design</h4>
+                    <p>We plan the layout, structure and creative direction.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="workflow-card">
+                    <span class="workflow-number">03</span>
+                    <div class="workflow-icon">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+                    <h4>Develop</h4>
+                    <p>We build the solution and review the implementation.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="workflow-card">
+                    <span class="workflow-number">04</span>
+                    <div class="workflow-icon">
+                        <i class="bi bi-check2-circle"></i>
+                    </div>
+                    <h4>Deliver</h4>
+                    <p>We prepare the completed work for handover.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- PROJECT CTA -->
+<section class="projects-cta">
+    <div class="container">
+        <div class="projects-cta-box">
+
+            <div class="projects-cta-decoration">
+                <i class="bi bi-rocket-takeoff"></i>
+            </div>
+
+            <div class="projects-cta-content">
+                <span>HAVE A PROJECT IN MIND?</span>
+
+                <h2>
+                    Your Idea Could Be
+                    <span>Our Next Great Project.</span>
+                </h2>
+
+                <p>
+                    Let's discuss your requirements and explore
+                    how we can turn your vision into a real solution.
+                </p>
+
+                <a href="{% url 'contact' %}" class="projects-cta-button">
+                    Let's Work Together
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

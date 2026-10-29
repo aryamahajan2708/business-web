@@ -1,0 +1,464 @@
+{% extends 'base.html' %}
+
+{% block title %}Services | DjangoApp{% endblock %}
+
+{% block content %}
+
+<!-- SERVICES HERO -->
+<section class="services-hero">
+    <div class="services-hero-glow"></div>
+
+    <div class="container">
+        <div class="services-hero-content">
+
+            <span class="services-badge">
+                <i class="bi bi-stars"></i>
+                WHAT WE OFFER
+            </span>
+
+            <h1>
+                Smart Services.
+                <span>Powerful Results.</span>
+            </h1>
+
+            <p>
+                Discover innovative services and practical solutions
+                designed to help your business grow, connect with
+                customers and achieve more.
+            </p>
+
+            <div class="services-hero-buttons">
+                <a href="#all-services" class="services-btn-primary">
+                    Explore Our Services
+                    <i class="bi bi-arrow-down"></i>
+                </a>
+
+                <a href="{% url 'contact' %}" class="services-btn-outline">
+                    Talk to Our Team
+                    <i class="bi bi-chat-dots"></i>
+                </a>
+            </div>
+
+            <nav class="services-breadcrumb" aria-label="Breadcrumb">
+                <a href="{% url 'home' %}">Home</a>
+                <i class="bi bi-chevron-right"></i>
+                <span>Services</span>
+            </nav>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- SERVICES INTRODUCTION -->
+<section class="services-intro">
+    <div class="container">
+        <div class="services-intro-box">
+
+            <div class="services-intro-icon">
+                <i class="bi bi-lightbulb"></i>
+            </div>
+
+            <div>
+                <span class="services-section-tag">OUR EXPERTISE</span>
+
+                <h2>
+                    Solutions Designed
+                    <span>Around Your Goals.</span>
+                </h2>
+
+                <p>
+                    Every business is different. We focus on understanding
+                    your requirements and providing thoughtful services
+                    that support your objectives.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ALL SERVICES -->
+<section class="services-list-section" id="all-services">
+    <div class="container">
+
+        <div class="services-section-heading text-center">
+            <span class="services-section-tag">EXPLORE OUR SERVICES</span>
+
+            <h2>
+                What Can We
+                <span>Do For You?</span>
+            </h2>
+
+            <p>
+                From digital experiences to creative solutions,
+                explore the services that match your business needs.
+            </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+
+            <!-- SERVICE 1 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="service-detail-card">
+                    <div class="service-detail-top">
+                        <div class="service-detail-icon icon-blue">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <span class="service-number">01</span>
+                    </div>
+
+                    <h3>Web Development</h3>
+
+                    <p>
+                        Modern and responsive websites designed to
+                        showcase your business and provide a smooth
+                        experience across devices.
+                    </p>
+
+                    <ul class="service-feature-list">
+                        <li><i class="bi bi-check2-circle"></i> Business Websites</li>
+                        <li><i class="bi bi-check2-circle"></i> Responsive Design</li>
+                        <li><i class="bi bi-check2-circle"></i> Django Web Applications</li>
+                        <li><i class="bi bi-check2-circle"></i> Portfolio</li>
+                    </ul>
+
+                    <a href="{% url 'contact' %}" class="service-detail-link">
+                        Discuss Your Project
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </article>
+            </div>
+
+            <!-- SERVICE 2 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="service-detail-card">
+                    <div class="service-detail-top">
+                        <div class="service-detail-icon icon-purple">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <span class="service-number">02</span>
+                    </div>
+
+                    <h3>Web Design</h3>
+
+                    <p>
+                        Attractive and user-friendly designs that
+                        make your brand memorable and help customers
+                        navigate your website with ease.
+                    </p>
+
+                    <ul class="service-feature-list">
+                        <li><i class="bi bi-check2-circle"></i> Website Design</li>
+                        <li><i class="bi bi-check2-circle"></i> Landing Page Design</li>
+                        <li><i class="bi bi-check2-circle"></i> Creative Visuals</li>
+                        <li><i class="bi bi-check2-circle"></i> Django Web Applications</li>
+                    </ul>
+
+                    <a href="{% url 'contact' %}" class="service-detail-link">
+                        Discuss Your Project
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </article>
+            </div>
+
+            <!-- SERVICE 3 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="service-detail-card">
+                    <div class="service-detail-top">
+                        <div class="service-detail-icon icon-green">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <span class="service-number">03</span>
+                    </div>
+
+                    <h3>Front-end Developer</h3>
+
+                    <p>
+                        Build brand awareness and connect with your
+                        target audience through thoughtful digital
+                        marketing strategies.
+                    </p>
+
+                    <ul class="service-feature-list">
+                        <li><i class="bi bi-check2-circle"></i> Responsive portfolio</li>
+                        <li><i class="bi bi-check2-circle"></i> Content Planning</li>
+                        <li><i class="bi bi-check2-circle"></i> Designing</li>
+                    </ul>
+
+                    <a href="{% url 'contact' %}" class="service-detail-link">
+                        Discuss Your Project
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </article>
+            </div>
+
+            <!-- SERVICE 4 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="service-detail-card">
+                    <div class="service-detail-top">
+                        <div class="service-detail-icon icon-orange">
+                            <i class="bi bi-brush"></i>
+                        </div>
+                        <span class="service-number">04</span>
+                    </div>
+
+                    <h3>Back-end Developer</h3>
+
+                    <p>
+                        Create a consistent visual identity with
+                        professional graphics that communicate
+                        your business personality.
+                    </p>
+
+                    <ul class="service-feature-list">
+                        <li><i class="bi bi-check2-circle"></i> Data Managment </li>
+                        <li><i class="bi bi-check2-circle"></i> Data Storage </li>
+                        <li><i class="bi bi-check2-circle"></i> Storage </li>
+                        <li><i class="bi bi-check2-circle"></i> Fatch API </li>
+                    </ul>
+
+                    <a href="{% url 'contact' %}" class="service-detail-link">
+                        Discuss Your Project
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </article>
+            </div>
+
+            <!-- SERVICE 5 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="service-detail-card">
+                    <div class="service-detail-top">
+                        <div class="service-detail-icon icon-cyan">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <span class="service-number">05</span>
+                    </div>
+
+                    <h3>Website Maintenance</h3>
+
+                    <p>
+                        Keep your website updated, organized and
+                        functioning properly with ongoing maintenance
+                        and technical assistance.
+                    </p>
+
+                    <ul class="service-feature-list">
+                        <li><i class="bi bi-check2-circle"></i> Content Updates</li>
+                        <li><i class="bi bi-check2-circle"></i> Bug Fixes</li>
+                        <li><i class="bi bi-check2-circle"></i> Technical Support</li>
+                    </ul>
+
+                    <a href="{% url 'contact' %}" class="service-detail-link">
+                        Discuss Your Project
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </article>
+            </div>
+
+            <!-- SERVICE 6 -->
+            <div class="col-md-6 col-lg-4">
+                <article class="service-detail-card">
+                    <div class="service-detail-top">
+                        <div class="service-detail-icon icon-pink">
+                            <i class="bi bi-diagram-3"></i>
+                        </div>
+                        <span class="service-number">06</span>
+                    </div>
+
+                    <h3>web Developer</h3>
+
+                    <p>
+                        Explore practical digital tools and customized
+                        solutions to organize workflows and improve
+                        day-to-day business operations.
+                    </p>
+
+                    <ul class="service-feature-list">
+                        <li><i class="bi bi-check2-circle"></i> Responsive Website</li>
+                        <li><i class="bi bi-check2-circle"></i> Custom Web Tools</li>
+                        <li><i class="bi bi-check2-circle"></i> Digital Transformation</li>
+                    </ul>
+
+                    <a href="{% url 'contact' %}" class="service-detail-link">
+                        Discuss Your Project
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- OUR PROCESS -->
+<section class="services-process">
+    <div class="container">
+
+        <div class="services-section-heading text-center">
+            <span class="services-section-tag">HOW WE WORK</span>
+
+            <h2>
+                From Idea To
+                <span>Execution.</span>
+            </h2>
+
+            <p>
+                A simple and organized process helps us understand
+                your requirements and work towards the right solution.
+            </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="process-card">
+                    <div class="process-number">01</div>
+                    <div class="process-icon">
+                        <i class="bi bi-chat-square-text"></i>
+                    </div>
+                    <h4>Discovery</h4>
+                    <p>We listen to your ideas and understand your goals.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="process-card">
+                    <div class="process-number">02</div>
+                    <div class="process-icon">
+                        <i class="bi bi-pencil-square"></i>
+                    </div>
+                    <h4>Planning</h4>
+                    <p>We define the scope and plan the right approach.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="process-card">
+                    <div class="process-number">03</div>
+                    <div class="process-icon">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+                    <h4>Execution</h4>
+                    <p>We work on the solution with care and attention.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="process-card">
+                    <div class="process-number">04</div>
+                    <div class="process-icon">
+                        <i class="bi bi-check2-circle"></i>
+                    </div>
+                    <h4>Delivery</h4>
+                    <p>We review the work and prepare it for handover.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- WHY OUR SERVICES -->
+<section class="services-benefits">
+    <div class="container">
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+                <div class="services-benefits-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1100&q=85"
+                        alt="Team collaborating on a project">
+
+                    <div class="services-image-caption">
+                        <i class="bi bi-people-fill"></i>
+                        <div>
+                            <h5>Built Around Your Needs</h5>
+                            <p>Collaboration at every step</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <span class="services-section-tag">THE DIFFERENCE</span>
+
+                <h2 class="services-benefits-title">
+                    Services With
+                    <span>Your Goals In Mind.</span>
+                </h2>
+
+                <p class="services-benefits-description">
+                    We aim to make the experience straightforward,
+                    transparent and focused on what matters to you.
+                </p>
+
+                <div class="benefit-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <div>
+                        <h5>Personalized Approach</h5>
+                        <p>Solutions tailored to your project requirements.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <div>
+                        <h5>Clear Communication</h5>
+                        <p>Understand the work, scope and next steps.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <div>
+                        <h5>Focus On Quality</h5>
+                        <p>Thoughtful execution and attention to detail.</p>
+                    </div>
+                </div>
+
+                <a href="{% url 'contact' %}" class="services-btn-primary benefits-button">
+                    Discuss Your Requirements
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- FINAL CTA -->
+<section class="services-cta">
+    <div class="container">
+        <div class="services-cta-box">
+
+            <div class="services-cta-icon">
+                <i class="bi bi-rocket-takeoff"></i>
+            </div>
+
+            <span>READY TO GET STARTED?</span>
+
+            <h2>
+                Let's Find The Right
+                <span>Solution For You.</span>
+            </h2>
+
+            <p>
+                Tell us what you need, and let's explore how we
+                can help bring your next idea to life.
+            </p>
+
+            <a href="{% url 'contact' %}" class="services-cta-button">
+                Contact Us Today
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

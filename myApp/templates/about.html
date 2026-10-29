@@ -1,0 +1,365 @@
+{% extends 'base.html' %}
+
+{% block title %}About | DjangoApp{% endblock %}
+
+{% block content %}
+
+<!-- ABOUT HERO -->
+<section class="about-hero">
+    <div class="about-hero-glow"></div>
+
+    <div class="container">
+        <div class="about-hero-content">
+            <span class="about-badge">
+                <i class="bi bi-stars"></i>
+                GET TO KNOW US
+            </span>
+
+            <h1>
+                We Turn Your Vision
+                <span>Into Reality.</span>
+            </h1>
+
+            <p>
+                Discover who we are, what we believe in, and how
+                we're helping businesses move forward with creativity,
+                technology and meaningful solutions.
+            </p>
+
+            <nav class="about-breadcrumb" aria-label="Breadcrumb">
+                <a href="{% url 'home' %}">Home</a>
+                <i class="bi bi-chevron-right"></i>
+                <span>About Us</span>
+            </nav>
+        </div>
+    </div>
+</section>
+
+
+<!-- COMPANY INTRODUCTION -->
+<section class="about-intro section-padding">
+    <div class="container">
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+                <div class="about-main-visual">
+                    <div class="about-image-frame">
+                        <img
+                            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=85"
+                            alt="Our team collaborating on business ideas">
+                    </div>
+
+                    <div class="about-floating-note">
+                        <div class="about-note-icon">
+                            <i class="bi bi-lightbulb"></i>
+                        </div>
+                        <div>
+                            <h5>Driven By Ideas</h5>
+                            <p>Focused on meaningful solutions</p>
+                        </div>
+                    </div>
+
+                    <div class="about-visual-decoration"></div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <span class="about-section-tag">WHO WE ARE</span>
+
+                <h2 class="about-section-title">
+                    Building Better
+                    <span>Business Experiences.</span>
+                </h2>
+
+                <p class="about-body-text">
+                    Welcome to YourBusiness — a business focused on
+                    helping people and organizations turn their ideas
+                    into practical solutions.
+                </p>
+
+                <p class="about-body-text">
+                    We believe that great work begins with understanding.
+                    That's why we focus on your goals, listen to your
+                    needs, and work towards solutions that make a real
+                    difference to your business.
+                </p>
+
+                <p class="about-body-text">
+                    With a commitment to quality, creativity and
+                    continuous improvement, we aim to build lasting
+                    relationships and deliver experiences you can trust.
+                </p>
+
+                <div class="about-highlight">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Committed to quality, innovation and customer satisfaction.</span>
+                </div>
+
+                <a href="{% url 'contact' %}" class="about-primary-btn">
+                    Work With Us
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- MISSION AND VISION -->
+<section class="about-purpose section-padding">
+    <div class="container">
+
+        <div class="about-section-heading text-center">
+            <span class="about-section-tag">OUR PURPOSE</span>
+
+            <h2 class="about-section-title">
+                What Guides
+                <span>Everything We Do.</span>
+            </h2>
+
+            <p class="about-body-text mx-auto">
+                Our purpose keeps us focused on creating value,
+                building trust and helping our clients progress.
+            </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-md-6">
+                <div class="purpose-card mission-card">
+                    <div class="purpose-icon">
+                        <i class="bi bi-bullseye"></i>
+                    </div>
+
+                    <span class="purpose-label">OUR MISSION</span>
+
+                    <h3>Creating Value Through Every Solution.</h3>
+
+                    <p>
+                        Our mission is to understand our clients'
+                        challenges and deliver thoughtful, reliable
+                        solutions that support their goals and create
+                        lasting value.
+                    </p>
+
+                    <div class="purpose-watermark">
+                        <i class="bi bi-bullseye"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="purpose-card vision-card">
+                    <div class="purpose-icon">
+                        <i class="bi bi-eye"></i>
+                    </div>
+
+                    <span class="purpose-label">OUR VISION</span>
+
+                    <h3>Building A Better Digital Future.</h3>
+
+                    <p>
+                        Our vision is to build a trusted business known
+                        for creativity, meaningful innovation, excellent
+                        service and long-term client relationships.
+                    </p>
+
+                    <div class="purpose-watermark">
+                        <i class="bi bi-eye"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- CORE VALUES -->
+<section class="about-values section-padding">
+    <div class="container">
+
+        <div class="about-section-heading text-center">
+            <span class="about-section-tag">WHAT WE BELIEVE IN</span>
+
+            <h2 class="about-section-title">
+                Our Core
+                <span>Values.</span>
+            </h2>
+
+            <p class="about-body-text mx-auto">
+                The principles behind our decisions, our work
+                and the relationships we build.
+            </p>
+        </div>
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="value-card">
+                    <div class="value-icon value-blue">
+                        <i class="bi bi-gem"></i>
+                    </div>
+                    <h4>Quality</h4>
+                    <p>
+                        We pay attention to the details and aim to
+                        deliver work we can be proud of.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="value-card">
+                    <div class="value-icon value-purple">
+                        <i class="bi bi-lightbulb"></i>
+                    </div>
+                    <h4>Innovation</h4>
+                    <p>
+                        We welcome new ideas and look for smarter
+                        ways to solve everyday challenges.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="value-card">
+                    <div class="value-icon value-green">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h4>Integrity</h4>
+                    <p>
+                        We value honest communication, transparency
+                        and responsible decisions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="value-card">
+                    <div class="value-icon value-orange">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h4>Teamwork</h4>
+                    <p>
+                        We believe collaboration and listening help
+                        create better outcomes for everyone.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- WHY CHOOSE US -->
+<section class="about-why section-padding">
+    <div class="container">
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+                <span class="about-section-tag">WHY WORK WITH US</span>
+
+                <h2 class="about-section-title">
+                    A Partnership
+                    <span>You Can Trust.</span>
+                </h2>
+
+                <p class="about-body-text">
+                    Every business has different goals. We take the
+                    time to understand yours and approach each project
+                    with care, clear communication and a focus on value.
+                </p>
+
+                <div class="why-detail">
+                    <div class="why-detail-icon">
+                        <i class="bi bi-chat-square-text"></i>
+                    </div>
+                    <div>
+                        <h5>Clear Communication</h5>
+                        <p>
+                            We believe good collaboration starts with
+                            listening and sharing clear information.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="why-detail">
+                    <div class="why-detail-icon">
+                        <i class="bi bi-stars"></i>
+                    </div>
+                    <div>
+                        <h5>Thoughtful Solutions</h5>
+                        <p>
+                            We focus on practical ideas tailored to
+                            the needs of each project.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="why-detail">
+                    <div class="why-detail-icon">
+                        <i class="bi bi-arrow-repeat"></i>
+                    </div>
+                    <div>
+                        <h5>Continuous Improvement</h5>
+                        <p>
+                            We keep learning, adapting and looking
+                            for ways to improve our work.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="about-team-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1100&q=85"
+                        alt="Professionals collaborating in a meeting">
+
+                    <div class="team-image-caption">
+                        <i class="bi bi-people-fill"></i>
+                        <div>
+                            <h5>Better Together</h5>
+                            <p>Collaboration makes ideas stronger.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- FINAL CTA -->
+<section class="about-contact-cta">
+    <div class="container">
+        <div class="about-cta-inner">
+
+            <div class="about-cta-icon">
+                <i class="bi bi-rocket-takeoff"></i>
+            </div>
+
+            <span>LET'S CREATE SOMETHING GREAT</span>
+
+            <h2>
+                Your Next Big Idea
+                <span>Starts With A Conversation.</span>
+            </h2>
+
+            <p>
+                Have a project in mind or want to learn more about us?
+                We'd love to hear from you.
+            </p>
+
+            <a href="{% url 'contact' %}" class="about-primary-btn">
+                Contact Our Team
+                <i class="bi bi-arrow-right"></i>
+            </a>
+
+        </div>
+    </div>
+</section>
+{% endblock %}
