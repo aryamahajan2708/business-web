@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Confirm | DjangoApp{% endblock %}
+
+{% block content %}
+
+<h2>Confirm Person Details</h2>
+
+<form method="POST">
+    {% csrf_token %}
+
+    <label>First Name:</label>
+    <input type="text" name="fName" required>
+
+    <br><br>
+
+    <label>Last Name:</label>
+    <input type="text" name="lName" required>
+
+    <br><br>
+
+    <button type="submit" class="m-3 p-3 bg-primary text-light">Confirm Person</button>
+    <a href="{% url 'form' %}"><button class="bg-primary p-3 text-light" type="button">Go To Form</button></a>
+</form>
+
+<p style="color:red;">{{ error }}</p>
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Form | DjangoApp{% endblock %}
+
+{% block content %}
+
+    <div class="main-container">
+        <div class="form-header">
+            <h1>Registration Form</h1>
+        </div>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-grid">
+                <div class="input-group">
+                    <label>Name : </label>
+                    <input type="text"placeholder= "Enter Your name" name = "fname" required>
+                </div>
+                <div class="input-group">
+                    <label>Last Name : </label>
+                    <input type="text"placeholder= "Enter Your lastname"  name = "lname"required>
+                </div>
+                <div class="input-group">
+                    <label>City : </label>
+                    <input type="text"placeholder= "Enter Your City"  name = "city" required>
+                </div>
+                <div class="input-group">
+                    <label>Age : </label>
+                    <input type="number"placeholder= "Enter Your age" min="1"  name = "age" required>
+                </div>
+                <div class="input-group">
+                    <label>Email : </label>
+                    <input type="email"placeholder= "Enter Your email"  name = "email" required>
+                </div>
+            </div>
+            <div class="button-group">
+                <button type="submit" class="submit-btn bg-primary">Submit Form</button>
+                <a href="{% url 'data' %}">
+                    <button type="button"class="bg-primary p-3 text-light">View Data</button>
+                </a>
+                <a href="{% url 'confirm_person' %}">
+                    <button type="button"class="bg-primary p-3 text-light">Update Data</button>
+                </a>
+            </div>
+        </form>
+    </div> 
+
+{% endblock %}

@@ -1,0 +1,145 @@
+
+/* Main Container */
+.main-container {
+    width: 100%;
+    max-width: 750px;
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+    
+}
+
+/* Header */
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.form-header h1 {
+    font-size: 27px;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.form-header p {
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* Form Grid */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Input Groups */
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+/* Inputs, Select and Textarea */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 14px;
+    color: #334155;
+    background-color: #ffffff;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #94a3b8;
+}
+
+textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+button {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn {
+    flex: 2;
+    background-color: #4f46e5;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #4338ca;
+}
+
+/* .reset-btn {
+    flex: 1;
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+.reset-btn:hover {
+    background-color: #cbd5e1;
+} */
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    .main-container {
+        padding: 25px 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .form-header h1 {
+        font-size: 22px;
+    }
+}
